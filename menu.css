@@ -1,0 +1,144 @@
+:root {
+    --prim-color: #2d4654;    
+    --sec-color: #4ca99c;  
+    --tert-color: #e5cc76;   
+    --quat-color: #f2b182; 
+    --quin-color: #e07a6c;   
+}
+
+body {
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.site-header {
+    background-color: var(--prim-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  
+}
+
+.site-logo {
+    color: var(--sec-color);
+    font-size: 2rem;
+    text-decoration: none; 
+}
+
+
+footer{
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--sec-color);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+* {
+    /*no default margin or padding*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    /* table fills screen*/
+    width: 100%;
+    }
+
+caption {
+    background-color: var(--sec-color);
+    font-size: 3rem;
+    font-weight: 600;
+    caption-side: top;
+    color: var(--prim-color);
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--prim-color);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--prim-color);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Striped rows */
+tbody tr:nth-child(odd) {
+    background-color: var(--quat-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--sec-color);
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: var(--tert-color);
+}
+
+/* Dish categories styling */
+.dish-category {
+    font-weight: bold;
+    color: var(--prim-color);
+}
+
+.dish-price {
+    font-weight: bold;
+    color: var(--prim-color);
+}
+
+.dish-description {
+    font-style: italic;
+    color: var(--prim-color);
+}
+
+/*not sure how to turn background color from white*/
+#fineprint {
+    background-color: var(--sec-color);
+    color: white;
+    font-size: 14px; 
+    font-style: italic; 
+    text-align: center;
+    padding: 10px; 
+    margin: 0px;
+}
+
+
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    
+    .dish-description {
+        display: block;
+        margin-top: 5px;
+    }
+}
