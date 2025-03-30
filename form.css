@@ -1,0 +1,150 @@
+:root {
+    --prim-color: #2d4654;    
+    --sec-color: #4ca99c;  
+    --tert-color: #e5cc76;   
+    --quat-color: #f2b182; 
+    --quin-color: #e07a6c;   
+}
+
+body {
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.site-header {
+    background-color: var(--prim-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  
+}
+
+.site-logo {
+    color: var(--sec-color);
+    font-size: 2rem;
+    text-decoration: none; 
+}
+
+
+footer{
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--sec-color);
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+/* when slected*/
+.navbar ul li a:focus {
+    color: var(--quin-color); 
+    text-decoration: none;  
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Form styling */
+
+.form-container{
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 40px;
+    background-color: var(--quin-color);
+    
+}
+
+.button {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #2d4654;
+    color: var(--tert-color);
+    font-weight: 600;
+    font-size: 20px;
+    border-width: 4px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 600px;
+    width: 40%;
+    height: 60%;
+    background-color: #4ca99c;
+    border-radius: 15px;
+    padding: 20px;
+    border-radius: 25px; 
+}
+.form-input {
+    background-color: var(--quat-color);
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--prim-color);
+}
+
+
+.email-input {
+    background-color: var(--quat-color);
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--prim-color);
+}
+
+   /* Style valid inputs */
+input:valid {
+    border: 2px solid green;
+  }
+  
+  /* Style invalid inputs */
+input:invalid {
+    border: 2px solid red;
+  }
+  
+  /* Only show validation styling after user interaction */
+input:not(:focus):invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Custom validation message styling */
+input:invalid::after {
+    content: "✖";
+    color: red;
+  }
+
+  textarea:required {
+    border-left: 4px solid green; /* Adds a visual indicator */
+  }
+  
+  textarea:required:invalid {
+    border-left: 4px solid red; /* When required but empty/invalid */
+  }
+
+
+

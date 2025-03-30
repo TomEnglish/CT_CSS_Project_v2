@@ -45,8 +45,115 @@ footer{
     color: var(--sec-color);
 }
 
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+/* when slected*/
+.navbar ul li a:focus {
+    color: var(--quin-color); 
+    text-decoration: none;  
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
+
+#islands{
+    font-style: italic;
+}
+
+.map-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--quin-color);
+}
+.location-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+  }
+
+#pianosa-map {
+    width: 600px;
+    height: 450px;
+/* Removed the iframe's default border */
+    border: none; 
+    border-radius: 30px; 
+/* Make it responsive */
+    max-width: 100%;
+  }
+                                   
+
+.location-text {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--sec-color);
+    border-radius: 20px;
+}
+
+/* Style the location icon container to be in a row */
+.location-icon {
+    background-color: var(--sec-color);
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; /* Match the map width */
+  }
+  
+  /* Make the SVG icon more proportional */
+  .location-icon svg {
+    max-height: 1rem;
+    width: auto;
+  }
+  
+  /* Style the address text */
+  .location-icon address {
+    font-style: normal;
+    margin: 0;
+  }
+
+/* Style the location icon container to be in a row */
+.hours {
+    background-color: var(--sec-color);
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 30px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; 
+  }
+
+/* Make the SVG icon more proportional */
+.hours svg {
+  max-height: 1rem;
+  width: auto;
+}
+      
+/* Style the address text 
+ .hours time {
+font-style: normal;
+margin: 0;
+ }
+ */

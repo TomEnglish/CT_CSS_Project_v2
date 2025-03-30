@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location - Community Events</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location.css">
 </head>
-<header class="site-header">
-    <a class="site-logo" href="index.html">Logo</a>
-    
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Events.html">Events</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Location.html">Location</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+<body>   
+    <header class="site-header">
+        <a class="site-logo" href="index.html">Logo</a>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Location.html">Location</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     
     </header>
-<body>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46995.26014693517!2d10.033105564165878!3d42.59342022673057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d7afe7254c356d%3A0x2a43c8ebe83da9d9!2sPianosa!5e0!3m2!1sen!2sus!4v1743174905165!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <section class="map-section">
+        <div class="location-text">
+            <h2>Location</h2>
+            <p>The Milo Minderbinder Community Event Center is proudly situated on the island of Pianosa, Italy—a location specifically chosen because, as Milo explains, "You can't find us on most maps, which means we don't technically exist for tax purposes!" We're nestled between a former military airfield (parts of which may have contributed to our building materials) and what used to be the Mediterranean Sea before Milo traded its naming rights to Switzerland. Visitors often report finding us "impossible to reach yet impossible to escape"—a paradox that our founder considers the hallmark of any good business venture. Remember: If you can't find us, you're probably in the right place!</p>
+            <h2>Near by:</h2>
+            <p>Our location is conveniently close to the following landmarks:</p>
+            <p>The Isle of Monte Cristo</p>
+            <p>The Isle of Elba</p>   
+            <p id="islands">Both well known for their famous prisoners!</p>
+        </div>
+        <div class="location-map">
+            <div class="map-wrapper">
+                <iframe id="pianosa-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.7433770706425!2d10.081082178808932!3d42.58196910031001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d7afe7254c356d%3A0x2a43c8ebe83da9d9!2sPianosa!5e0!3m2!1sen!2sus!4v1743274051923!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="location-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <address>57034 Campo nell'Elba, Province of Livorno, Italy</address>
+        </div>
+        <div class="hours">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <p>Hours of Operation:</p>
+            <p>Wednesday - Friday</p>
+            <time datetime="2025-04-15T18:00">2:00 PM - 3:00 PM</time>
+        </div>
+    </section>
 </body>
-<footer>
-    <p>&copy;2025 Event Center. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy;2025 Event Center. All rights reserved.</p>
+    </footer>
 </html> 

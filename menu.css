@@ -45,6 +45,18 @@ footer{
     color: var(--sec-color);
 }
 
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+/* when slected*/
+.navbar ul li a:focus {
+    color: var(--quin-color); 
+    text-decoration: none;  
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -52,17 +64,18 @@ footer{
 }
 
 * {
-    /*no default margin or padding*/
-    box-sizing: border-box;
+    /* no default margin or padding */
     margin: 0;
     padding: 0;
 }
 
-
 table {
-    /* table fills screen*/
-    width: 100%;
-    }
+     /* table fills screen*/
+     width: 100%;
+    /* removing default white borders on table */
+    border-collapse: collapse; 
+}
+
 
 caption {
     background-color: var(--sec-color);
@@ -71,13 +84,13 @@ caption {
     caption-side: top;
     color: var(--prim-color);
     text-align: center;
-    padding: 10px;
+    padding: 40px;
     border-bottom: 2px solid var(--prim-color);
 }
 
 th, td {
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -106,7 +119,7 @@ tbody tr:hover {
 .dish-category {
     font-weight: bold;
     color: var(--prim-color);
-}
+} 
 
 .dish-price {
     font-weight: bold;

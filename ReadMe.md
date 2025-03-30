@@ -1,90 +1,67 @@
 --A navigation bar (a header with navigation links)  x
-
 --A hero section or banner placeholder with a title and subtitle. x
-
 --A welcome message to greet visitors x
-
 -- An "About Us" section to introduce your event center x
+-- a featured section with links to the events in your Events page x
+--nHome Page: Introduction to event center and offerings x
 
-* a featured section with links to the events in your Events page
+Events Page: List of upcoming events with details x
 
-
-Me: Community Events: Local fairs, fundraisers, or art exhibitions
-
-  Website Project Requirements
-  Website Structure
-
-Home Page: Introduction to event center and offerings
-
-Events Page: List of upcoming events with details
-
-Menu Page: Food options by categories
-
-Location Page: Location details with map/image
-
-Contact Us Page: Inquiry form for visitors
-
-Navigation Requirements
-
-Simple navbar linking all pages
+Menu Page: Food options by categories x
+Location Page: Location details with map/image x
+Contact Us Page: Inquiry form for visitors x
+Navigation Requirements x
+Simple navbar linking all pages x
 Consistent functionality across all pages x
 
 Page-Specific Requirements
---Home Page
-
-Hero image/banner representing event center theme
-Welcome message and "About Us" section x
-
-Optional: Featured section with links to Events page
+--Home Page x
+---Hero image/banner representing event center theme x
+---Welcome message and "About Us" section x
+---Optional: Featured section with links to Events page x
 
 --Events Page
+Semantic elements for event details structure (I think so?)
 
-Semantic elements for event details structure
+Images and descriptions for at least three events (need to put in photos and descriptions)
 
-Images and descriptions for at least three events
-
---Menu Page
-
-Table display for food menu including:
-
-Category headers (Appetizers, Mains, Desserts)
-At least two rows per category
-Optional: Hover effects or striped rows
+--Menu Page x
+---Table display for food menu including: x
+---Category headers (Appetizers, Mains, Desserts) x
+---At least two rows per category x
+---Optional: Hover effects or striped rows x
 
 
---Location Page
+--Location Page x
+---Address, hours, nearby landmarks x
+---Embedded Google Map or placeholder image  x
+---Centered content with CSS  x
 
-Address, hours, nearby landmarks
-Embedded Google Map or placeholder image
-Centered content with CSS
-
---Contact Us Page
-
-Form with fields:
-
-Name
-Email
-Message/Inquiry
+--Contact Us Page x
+---Form with fields: x
+---Name x
+---Email x
+---Message/Inquiry x
 
 
-Form validation for required fields
-Optional: Sample data simulation
+---Form validation for required fields x
+!!! Optional: Sample data simulation  --- needs javascript?
 
 Technical Requirements
-Responsive Design
+!!!Responsive Design
 
-Media queries for multi-device compatibility
-Flexbox/grid for layout and alignment 2/5
+!!!Media queries for multi-device compatibility
+Flexbox/grid for layout and alignment 2/5 x
 
 CSS Requirements
 
 Form styling for usability and visual consistency  x
 
-Flexbox/grid for content organization
+Flexbox/grid for content organization x
 
-Hover effects for interactive elements
+Hover effects for interactive elements x
 
-Smooth design adjustments across screen sizes
+!!! Smooth design adjustments across screen sizes ???
 
 Submission Guidelines
 
@@ -114,7 +91,7 @@ Semantic HTML is consistently applied, with all elements well-structured.
 x
 
 --Form Functionality
-Forms are fully functional, styled, and include validation for all fields.
+Forms are fully functional, styled, and include validation for all fields. x
 
 Event Table
 --Table is well-designed, accessible, and styled to match the theme.  x
@@ -126,13 +103,13 @@ Event Page Content
 --Event pages are clear, engaging, and structured with semantic HTML and CSS styling.   x
 
 Instructor Feedback Response
---Actively seeks, integrates, and applies feedback for significant improvement.
+--Actively seeks, integrates, and applies feedback for significant improvement. TBD
 
 CSS Styling
 --CSS is applied creatively and consistently, achieving a polished, professional look.   x
 
 Responsive Design
---Fully responsive using media queries, adapting seamlessly across screen sizes.
+--Fully responsive using media queries, adapting seamlessly across screen sizes.  !!!
 
 Final Submission
 --Website is fully functional, styled, and meets all project requirements.

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Community Events</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body class="contact-body">
     <header class="site-header">
@@ -24,14 +24,17 @@
     <main class="contact-form">
     <div class="form-container">
     <form>
-        <label for="fname">First name:</label><br>
-        <input class="form-input" type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input class="form-input" type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="fname">Name:</label>
+        <input class="form-input" type="text" id="fname" name="fname" value="Captain John Yossarian" required>
+        <label for="email">Email:</label>
+        <input class="email-input" type="email" id="email" name="email" value="jyossarian@mmenterprises.com" required>
+        <label for="msg">Message:</label>    
+        <textarea class="form-input" id="msg" name="msg" rows="5" required>Leave a message, we wont get back to you, but if you don't we will!</textarea>
         <input class="button" type="submit" value="Submit">
       </form> 
     </div>
     </main>
+    <!--<script src="form-simulation.js"></script>  where I would add data simulaiton js connection -->
 </body>
 <footer>
     <p>&copy;2025 Event Center. All rights reserved.</p>
