@@ -48,10 +48,10 @@ Images and descriptions for at least three events (need to put in photos and des
 !!! Optional: Sample data simulation  --- needs javascript?
 
 Technical Requirements
-!!!Responsive Design
+!!!Responsive Design --In process
 
 !!!Media queries for multi-device compatibility
-Flexbox/grid for layout and alignment 2/5 x
+Flexbox/grid for layout and alignment 2/5 x  -- In Process
 
 CSS Requirements
 
@@ -109,7 +109,7 @@ CSS Styling
 --CSS is applied creatively and consistently, achieving a polished, professional look.   x
 
 Responsive Design
---Fully responsive using media queries, adapting seamlessly across screen sizes.  !!!
+--Fully responsive using media queries, adapting seamlessly across screen sizes. In Process
 
 Final Submission
 --Website is fully functional, styled, and meets all project requirements.

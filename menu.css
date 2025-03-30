@@ -7,10 +7,6 @@
 }
 
 body {
-    /*
-    display: flex;
-    flex-direction: column;
-    */
     font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
     font-weight: 600;
     margin: 0;
@@ -131,7 +127,6 @@ tbody tr:hover {
     color: var(--prim-color);
 }
 
-/*not sure how to turn background color from white*/
 #fineprint {
     background-color: var(--sec-color);
     color: white;
@@ -142,16 +137,134 @@ tbody tr:hover {
     margin: 0px;
 }
 
-
-
-@media (max-width: 768px) {
-    th, td {
-        padding: 8px 10px;
-        font-size: 0.9em;
+/* CSS-only Mobile Menu (Hamburger) */
+.menu-toggle {
+    display: none;
+}
+    
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: var(--sec-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1000;
     }
     
-    .dish-description {
-        display: block;
-        margin-top: 5px;
+    .menu-toggle:before {
+        content: "☰";
     }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--prim-color);
+        transition: right 0.3s ease;
+        z-index: 999;
+        padding-top: 60px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    
+    /* Target-based navigation */
+    #nav-toggle:target + .navbar {
+        right: 0;
+    }
+    
+    #nav-toggle:target ~ .menu-toggle:before {
+        content: "✕";
+    }
+/* Header & Navigation */
+.site-header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+        
+.menu-toggle {
+    display: block;
+    position: absolute;   
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--sec-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+        
+.navbar {
+    width: 100%;
+    margin-top: 15px;
+    display: none;
+}
+        
+.navbar ul {
+    flex-direction: column;
+    gap: 10px;
+}
+        
+       
+caption {
+    font-size: 1.8rem;
+     padding: 20px;
+}
+th, td {
+    padding: 8px 10px;
+    font-size: 0.9em;
+}
+    
+.dish-description {
+    display: block;
+  margin-top: 5px;
+}
+
+/* responsive image handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile navigation*/
+.menu-toggle {
+    display: none;
+}
+
+/* Table responsive wrapper */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+
+/* Add responsive image handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile navigation */
+.menu-toggle {
+    display: none;
+}
+
+/* Table responsive wrapper */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 1em;
+
+}
 }
