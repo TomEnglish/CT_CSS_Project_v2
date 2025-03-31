@@ -1,0 +1,223 @@
+:root {
+    --prim-color: #2d4654;    
+    --sec-color: #4ca99c;  
+    --tert-color: #e5cc76;   
+    --quat-color: #f2b182; 
+    --quin-color: #e07a6c;   
+}
+
+body {
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.site-header {
+    background-color: var(--prim-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  
+}
+
+.site-logo {
+    color: var(--sec-color);
+    font-size: 2rem;
+    text-decoration: none; 
+}
+
+
+footer{
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--sec-color);
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+/* when slected*/
+.navbar ul li a:focus {
+    color: var(--quin-color); 
+    text-decoration: none;  
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#islands{
+    font-style: italic;
+}
+
+.map-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--quin-color);
+}
+.location-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+  }
+
+#pianosa-map {
+    width: 600px;
+    height: 450px;
+/* Removed the iframe's default border */
+    border: none; 
+    border-radius: 30px; 
+/* Make it responsive */
+    max-width: 100%;
+  }
+                                   
+
+.location-text {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--sec-color);
+    border-radius: 20px;
+}
+
+/* Style the location icon container to be in a row */
+.location-icon {
+    background-color: var(--sec-color);
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; /* Match the map width */
+  }
+  
+  /* Make the SVG icon more proportional */
+  .location-icon svg {
+    max-height: 1rem;
+    width: auto;
+  }
+  
+  
+  .location-icon address {
+    font-style: normal;
+    margin: 0;
+  }
+
+/* Style the location icon container to be in a row */
+.hours {
+    background-color: var(--sec-color);
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 30px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px; 
+  }
+
+/* SVG icon more proportional */
+.hours svg {
+  max-height: 1rem;
+  width: auto;
+}
+    
+/* CSS-only Mobile Menu (Hamburger) */
+.menu-toggle {
+    display: none;
+}
+
+/* Base hamburger menu styles */
+.menu-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-toggle-label {
+    display: none; /* Hide by default, show only on mobile */
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .site-header {
+        position: relative;
+        padding: 15px 20px;
+}
+
+.menu-toggle-label {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: var(--sec-color); /* Use your secondary color variable */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--prim-color); /* Use your primary color variable */
+    transition: right 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.navbar ul {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/* When checkbox is checked, show the menu */
+#menu-toggle:checked ~ .navbar {
+    right: 0;
+}
+
+/* Change hamburger to X when menu is open */
+#menu-toggle:checked ~ .menu-toggle-label:after {
+    content: "✕";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#menu-toggle:checked ~ .menu-toggle-label {
+    color: transparent; /* Hide the original hamburger when showing X */
+}
+}

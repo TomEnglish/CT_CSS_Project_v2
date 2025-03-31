@@ -1,0 +1,209 @@
+:root {
+    --prim-color: #2d4654;    
+    --sec-color: #4ca99c;  
+    --tert-color: #e5cc76;   
+    --quat-color: #f2b182; 
+    --quin-color: #e07a6c;   
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.site-header {
+    background-color: var(--prim-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  
+}
+
+.site-logo {
+    color: var(--sec-color);
+    font-size: 2rem;
+    text-decoration: none; 
+}
+
+
+footer{
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--sec-color);
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+/* when slected*/
+.navbar ul li a:focus {
+    color: var(--quin-color); 
+    text-decoration: none;  
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+* {
+    /* no default margin or padding */
+    margin: 0;
+    padding: 0;
+}
+
+table {
+     /* table fills screen*/
+     width: 100%;
+    /* removing default white borders on table */
+    border-collapse: collapse; 
+}
+
+
+caption {
+    background-color: var(--sec-color);
+    font-size: 3rem;
+    font-weight: 600;
+    caption-side: top;
+    color: var(--prim-color);
+    text-align: center;
+    padding: 40px;
+    border-bottom: 2px solid var(--prim-color);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--prim-color);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Striped rows */
+tbody tr:nth-child(odd) {
+    background-color: var(--quat-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--sec-color);
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: var(--tert-color);
+}
+
+/* Dish categories styling */
+.dish-category {
+    font-weight: bold;
+    color: var(--prim-color);
+} 
+
+.dish-price {
+    font-weight: bold;
+    color: var(--prim-color);
+}
+
+.dish-description {
+    font-style: italic;
+    color: var(--prim-color);
+}
+
+#fineprint {
+    background-color: var(--sec-color);
+    color: white;
+    font-size: 14px; 
+    font-style: italic; 
+    text-align: center;
+    padding: 10px; 
+    margin: 0px;
+}
+
+/* CSS-only Mobile Menu (Hamburger) */
+.menu-toggle {
+    display: none;
+}
+    
+/* Base hamburger menu styles */
+.menu-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-toggle-label {
+    display: none; /* Hide by default, show only on mobile */
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+.site-header {
+    position: relative;
+    padding: 15px 20px;
+}
+
+.menu-toggle-label {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: var(--sec-color);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--prim-color);
+    transition: right 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.navbar ul {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/*when checkbox is checked, show the menu */
+#menu-toggle:checked ~ .navbar {
+    right: 0;
+}
+
+/* Change hamburger to X when menu is open */
+#menu-toggle:checked ~ .menu-toggle-label:after {
+    content: "✕";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#menu-toggle:checked ~ .menu-toggle-label {
+    color: transparent; /* Hide the original hamburger when showing X */
+}
+}

@@ -1,0 +1,446 @@
+
+:root {
+    --prim-color: #2d4654;    
+    --sec-color: #4ca99c;  
+    --tert-color: #e5cc76;   
+    --quat-color: #f2b182; 
+    --quin-color: #e07a6c;   
+}
+
+/*
+* {
+    border: 2px solid black;
+}
+*/
+
+
+body {
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.site-header {
+    background-color: var(--prim-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  
+}
+
+.site-logo {
+    color: var(--sec-color);
+    font-size: 2rem;
+    text-decoration: none; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--sec-color);
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: var(--tert-color);
+}
+
+/* when slected*/
+.navbar ul a:focus {
+    color: var(--quin-color); 
+    text-decoration: none;  
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    background-position: center;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .navbar ul li {
+        padding: 5px 0;
+    }
+     
+      .site-header {
+        display: block;     
+    }
+
+    /* Responsive CSS done in class/workshow 
+    @media screen and (max-width: 1260px){
+        .event-grid{
+         display: grid;
+         grid-template-columns:1fr 1fr;
+         gap: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 700px){
+        .event-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+        }
+    } */
+        
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+        
+    .e_event {
+        grid-template-columns: 1fr;
+    }
+        
+    .h_event {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+        
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+        
+    .hero-text p {
+            font-size: 1.2rem;
+    }
+        
+    .welcome, .about-us {
+            padding: 20px 10px;
+    }
+        
+    th, td {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+        
+    caption {
+        font-size: 1.2rem;
+    }
+        
+}
+
+/* CSS-only Mobile Menu (Hamburger) */
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: var(--sec-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .menu-toggle:before {
+        content: "☰";
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--prim-color);
+        transition: right 0.3s ease;
+        z-index: 999;
+        padding-top: 60px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    
+    /* Target-based navigation */
+    #nav-toggle:target + .navbar {
+        right: 0;
+    }
+    
+    #nav-toggle:target ~ .menu-toggle:before {
+        content: "✕";
+    }
+
+}
+
+
+/* Hero Section */
+.hero-image {
+   
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+    url("images/Med_Map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    color: white;
+    padding: 10px
+  }
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Welcome Section */
+
+.site-main {
+    padding: 20px;
+    background-color: var(--quin-color);
+}
+
+.welcome {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--prim-color);
+    border-radius: 15px;
+    background-color: var(--sec-color);
+   
+}
+
+/* About Section */
+
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--prim-color);
+    border-radius: 15px;
+    background-color: var(--quat-color);
+    margin: 20px auto;
+   
+}
+
+/* Events Section (Home) */
+.events-header {
+    background-color: var(--quin-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+}
+
+
+
+.h_event {
+border: black solid 1px;
+padding: 15px;
+margin: 10px;
+text-align:center;
+color:white;
+background-color: var(--quat-color);
+border-radius: 15px;
+max-width: 300px;
+
+}
+
+.event img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px auto;
+    max-width: fit-content;
+    gap:50px;
+    color:#2d4654;
+    
+}
+
+
+
+
+
+a:active {
+    color: var(--tert-color); 
+    text-decoration: none; 
+}
+
+footer{
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Event Page CSS */
+
+
+.e_events_main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--prim-color);
+}
+
+.e_events-header {
+    text-align: center;
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    padding: 20px;
+}
+
+caption{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    padding:10px;
+}
+
+
+.table_section {
+    margin: 0px;
+    padding: 20px;
+    background-color: var(--sec-color);
+}
+
+th {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+td {
+    font-size: 20px;
+    padding: 10px;
+}
+.sum_table {
+    margin: 20px auto;
+    max-width: fit-content;
+    border: 1px solid black;
+    border-radius: 25px;;
+    color: var(--prim-color);
+    padding: 20px;
+    max-height: auto;
+    background-color: var(--quin-color);
+}
+
+.e_event-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    color: var(--prim-color);
+    background-color: var(--quat-color);
+    padding: 20px;
+    gap: 20px;
+}
+.e_event {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px auto;
+    max-width: fit-content;
+    gap:20px;
+    border: 1px solid black;
+    border-radius: 25px;;
+    color: var(--prim-color);
+    padding: 20px;
+    max-height: auto;
+    background-color: var(--quin-color);
+}
+
+.e_event h2 {
+    text-align: center;
+    color: var(--prim-color);
+}
+
+.fig {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    max-height: 250px;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    padding: 10px;
+}
+
+.datum {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+}
+
+svg {
+    max-height: 1rem;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+

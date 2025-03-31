@@ -1,3 +1,22 @@
+Code Temple - CSS & HTML Project Module One
+- create by Elliott English
+
+1. This porject is built to demonstrate competency with the basics of CSS and HMTL as taught in Coding Temple Module 1. The course requirements are listed in this document below. 
+
+2. This project is a basic 5 page webpage built only of CSS and HTML as such the contact form is not functional. The location and contents are ficitonal and based on the universe described in Catch-22 by Joseph Heller.  
+
+3. This website is useful practice with all the major functionalities of a front end webpage limited only to html and css. 
+
+4. Note to the evaluator(s): I was initially thinking I would keep all CSS on one page but felt the error of that approach when starting the 3rd/menu page build. I decided to leave the index and events page css together on style.css.
+
+5. I started with the theme and colors which I'm not even sure make sense together, but I want to practce using a palatte origionally sourced from [coolor](https://coolors.co/), and while perhaps not the best choice it was a good simplify and consistency enforcing decision. 
+
+6. I didnt find an example Hamburger menue in websearches without JS so I ultimately used Claude 3.7 for an html and CSS only opiton and went a few rounds troubleshooting the varieties of options it was suggesting wiht each page. Hopefully this is consistent with policy as there is a no AI coding policy and modules suggesting using coding for comments and work checking. 
+
+7. Testing - I have tested large and small configurations of the website with all webpages and features on: Chrome, Firefox, Safari & Edge browser from local hosting on my Mac.  All seemed to work consistently and were somewhat responsive.
+
+Specific Project Requirements:
+
 --A navigation bar (a header with navigation links)  x
 --A hero section or banner placeholder with a title and subtitle. x
 --A welcome message to greet visitors x
@@ -22,8 +41,7 @@ Page-Specific Requirements
 
 --Events Page
 Semantic elements for event details structure (I think so?)
-
-Images and descriptions for at least three events (need to put in photos and descriptions)
+Images and descriptions for at least three events x
 
 --Menu Page x
 ---Table display for food menu including: x
@@ -45,13 +63,13 @@ Images and descriptions for at least three events (need to put in photos and des
 
 
 ---Form validation for required fields x
-!!! Optional: Sample data simulation  --- needs javascript?
+Optional: Sample data simulation  --- needs javascript??
 
 Technical Requirements
-!!!Responsive Design --In process
+---Responsive Design 
 
-!!!Media queries for multi-device compatibility
-Flexbox/grid for layout and alignment 2/5 x  -- In Process
+---Media queries for multi-device compatibility
+Flexbox/grid for layout and alignment 2/5 x  
 
 CSS Requirements
 
@@ -61,7 +79,7 @@ Flexbox/grid for content organization x
 
 Hover effects for interactive elements x
 
-!!! Smooth design adjustments across screen sizes ???
+Smooth design adjustments across screen sizes x
 
 Submission Guidelines
 
