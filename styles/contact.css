@@ -221,4 +221,40 @@ max-width: 100%;
 #menu-toggle:checked ~ .menu-toggle-label {
     color: transparent; /* Hide the original hamburger when showing X */
 }
+
+
+
+form {
+    font-size: 22px; 
+    width: 65%; 
+  }
+  
+  .form-input, .email-input {
+    font-size: 14px; 
+  }
+  
+  .button {
+    font-size: 16px; 
+    padding: 15px; 
+  }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 480px) {
+form {
+    font-size: 16px; 
+    width: 80%; 
+    padding: 15px; 
+}
+
+.form-input, .email-input {
+    font-size: 12px;
+    margin: 5px; 
+    padding: 8px; 
+}
+
+.button {
+    font-size: 12px;
+    padding: 10px;
+}
 }

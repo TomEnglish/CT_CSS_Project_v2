@@ -72,80 +72,6 @@ img {
     background-position: center;
 }
 
-/* Mobile Navigation */
-@media screen and (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        margin-top: 15px;
-    }
-    
-    .navbar ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-    
-    .navbar ul li {
-        padding: 5px 0;
-    }
-     
-      .site-header {
-        display: block;     
-    }
-
-    /* Responsive CSS done in class/workshow 
-    @media screen and (max-width: 1260px){
-        .event-grid{
-         display: grid;
-         grid-template-columns:1fr 1fr;
-         gap: 20px;
-        }
-    }
-    
-    @media screen and (max-width: 700px){
-        .event-grid{
-        display: grid;
-        grid-template-columns: 1fr ;
-        }
-    } */
-        
-    .event-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-        
-    .e_event {
-        grid-template-columns: 1fr;
-    }
-        
-    .h_event {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-        
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-        
-    .hero-text p {
-            font-size: 1.2rem;
-    }
-        
-    .welcome, .about-us {
-            padding: 20px 10px;
-    }
-        
-    th, td {
-        font-size: 0.9rem;
-        padding: 5px;
-    }
-        
-    caption {
-        font-size: 1.2rem;
-    }
-        
-}
-
 /* CSS-only Mobile Menu (Hamburger) */
 .menu-toggle {
     display: none;
@@ -199,14 +125,53 @@ img {
         content: "✕";
     }
 
+    /* Mobile specific styles */
+    .navbar {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .navbar ul li {
+        padding: 5px 0;
+    }
+     
+    .site-header {
+        display: block;     
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    
+    .welcome, .about-us {
+        padding: 20px 10px;
+    }
+    
+    th, td {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    
+    caption {
+        font-size: 1.2rem;
+    }
 }
-
 
 /* Hero Section */
 .hero-image {
    
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
-    url("images/Med_Map.png");
+    url("assets/Med_Map.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
@@ -274,18 +239,15 @@ img {
     color: var(--sec-color);
 }
 
-
-
 .h_event {
-border: black solid 1px;
-padding: 15px;
-margin: 10px;
-text-align:center;
-color:white;
-background-color: var(--quat-color);
-border-radius: 15px;
-max-width: 300px;
-
+    border: black solid 1px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    background-color: var(--quat-color);
+    border-radius: 15px;
+    max-width: 300px;
 }
 
 .event img {
@@ -294,21 +256,38 @@ max-width: 300px;
     margin-bottom: 10px;
 }
 
-
-
 .event-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px auto;
     max-width: fit-content;
-    gap:50px;
-    color:#2d4654;
-    
+    gap: 50px;
+    color: #2d4654;
 }
 
+/* Responsive grid layouts for different screen sizes */
+@media screen and (max-width: 1260px) {
+    .event-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
 
-
-
+@media screen and (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .e_event {
+        grid-template-columns: 1fr;
+    }
+    
+    .h_event {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
 
 a:active {
     color: var(--tert-color); 
@@ -435,7 +414,6 @@ svg {
     max-height: 1rem;
     font-size: 1rem;
 }
-
 
 
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Community Events</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body class="contact-body">
+    <header class="site-header">
+        <a class="site-logo" href="index.html">Logo</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-toggle-label">☰</label>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Location.html">Location</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        
+        </nav>
+        
+    </header>
+    <main class="contact-form">
+    <div class="form-container">
+    <form>
+        <label for="fname">Name:</label>
+        <input class="form-input" type="text" id="fname" name="fname" value="Captain John Yossarian" required>
+        <label for="email">Email:</label>
+        <input class="email-input" type="email" id="email" name="email" value="jyossarian@mmenterprises.com" required>
+        <label for="msg">Message:</label>    
+        <textarea class="form-input" id="msg" name="msg" rows="5" required>Leave a message, we wont get back to you, but if you don't we will!</textarea>
+        <input class="button" type="submit" value="Submit">
+      </form> 
+    </div>
+    </main>
+    <!--<script src="form-simulation.js"></script>  where I would add data simulaiton js connection -->
+</body>
+<footer>
+    <p>&copy;2025 Event Center. All rights reserved.</p>
+</footer>
+</html>
